@@ -273,9 +273,7 @@ export default function Home() {
               <div className="icon">
                 <img src="/icons/menu.svg" alt="Menu" width={20} height={20} />
               </div>
-              <div className="icon">
-                <img src="/icons/grid.svg" alt="Grid" width={20} height={20} />
-              </div>
+              
             </div>
             <div className="logo-icon">
               <img src="/logo.png" alt="Logo" width={30} height={30} />
