@@ -278,7 +278,7 @@ export default function Home() {
               </div>
             </div>
             <div className="logo-icon">
-              <img src="/logo.svg" alt="Logo" width={32} height={32} />
+              <img src="/logo.png" alt="Logo" width={22} height={22} />
             </div>
             <div className="logo-text">LOGO</div>
             <div className="header-icons">
