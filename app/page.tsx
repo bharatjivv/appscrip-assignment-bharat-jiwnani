@@ -7,7 +7,7 @@ import { ShoppingBagIcon } from "@/components/icons/shopping-bag-icon"
 import { UserIcon } from "@/components/icons/user-icon"
 
 export default function Home() {
-  const [sidebarOpen, setSidebarOpen] = useState(true)
+  const [sidebarOpen, setSidebarOpen] = useState(false)
   const [sortDropdownOpen, setSortDropdownOpen] = useState(false)
   const [selectedSort, setSelectedSort] = useState("RECOMMENDED")
 
@@ -341,10 +341,16 @@ export default function Home() {
           </p>
         </section>
 
-        {/* Filters and Products Container */}
         <div className={`filters-container ${sidebarOpen ? "sidebar-open" : "sidebar-closed"}`}>
-          {/* Filters Sidebar */}
           <div className={`filters ${sidebarOpen ? "visible" : "hidden"}`}>
+            {/* crossstart */}
+          <div className="filter-header-mobile">
+              <h2>FILTERS</h2>
+              <button className="filter-close-btn" onClick={() => setSidebarOpen(false)}>
+                ✕
+              </button>
+            </div>
+            {/* crossend */}
             <div className="filter-section">
               <div className="filter-header-dropdown" onClick={() => toggleFilterSection("occasion")}>
                 <h3>OCCASION</h3>

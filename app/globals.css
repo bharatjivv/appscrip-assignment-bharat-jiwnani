@@ -299,6 +299,53 @@ body {
   accent-color: #ff6b35;
 }
 
+.filter-header-mobile {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #e5e5e5;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.filter-header-mobile h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.filter-close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #666;
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.filter-close-btn:hover {
+  background: #f5f5f5;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .filter-header-mobile {
+    display: flex;
+  }
+}
+
 .products-section {
   flex: 1;
 }
